@@ -1,7 +1,7 @@
-from decorator import *
+from journey.Journey import Journey
+from journey.View import View
 
-@strict
-def number(y: list, z: bool, x: int = 30) -> int:
-    return x
+if __name__ == "__main__":
 
-print(number(y=["how","are"],z=""))
+    game = Journey(View)
+    game.run()

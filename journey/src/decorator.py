@@ -9,9 +9,9 @@ def strict(func):
         functionDetails = inspect.getfullargspec(func)
         
         # Make sure that the parameter's are specified
-        if args:
+        if len(args) > 1:
             raise Exception("When using the decorator '@strict', you must specify the parameter and argument when you call the function. Example: myFunction(x=5)")
-
+        
         # Check the type for the functions parameters
         for parameter in functionDetails.args:
             try:
