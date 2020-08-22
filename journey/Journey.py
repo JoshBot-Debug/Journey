@@ -5,8 +5,8 @@ class Journey:
 
     def __init__(self, View: ViewInterface):
         self.__view = View()
-        self.__view._create()
 
 
     def mainloop(self):
+        """ This method must be called in order to start the view object's main loop """
         self.__view._mainloop()
