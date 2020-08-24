@@ -33,21 +33,3 @@ def strict(func):
         return returnVal
 
     return wrapper
-
-
-# def multiply(*args,**kwargs):
-
-#     # Check if we did not received arguments in the decorater
-#     if not callable(args[0]):
-#         def inner(func):
-#             def wrapper(*wargs,**wkwargs):
-#                 print(func.__annotations__)
-#                 return func(*wargs,**wkwargs) * args[0]
-#             return wrapper
-#         return inner
-
-#     # Check if we received arguments in the decorater
-#     if callable(args[0]):
-#         def wrapper(*wargs,**wkwargs):
-#             return args[0](*wargs,**wkwargs) * 2
-#         return wrapper

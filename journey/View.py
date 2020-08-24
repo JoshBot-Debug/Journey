@@ -11,10 +11,7 @@ class View(cmd.Cmd,ViewInterface):
 
     def do_greet(self, person):
         """greet [person] Greet the named person"""
-        if person:
-            print ("hi,", person)
-        else:
-            print ('hi')
+        if person: print ("hi,", person) else: print ('hi')
 
 
     def do_quit(self, line):

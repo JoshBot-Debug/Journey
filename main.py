@@ -3,5 +3,5 @@ from journey.View import View
 
 if __name__ == "__main__":
 
-    game = Journey(View)
-    game.mainloop()
+    controller = Journey(View)
+    controller.mainloop()
